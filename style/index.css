@@ -70,13 +70,37 @@ form > div.campo {
     background-color: var(--lilas);
     width: 100%;
     display: block;
-    height: 40px;
+    height: 45px;
     border-radius: 7px;
     margin: 5px 0px;
+    border: 3px solid var(--lilas);
 }
 
 div.campo > label {
     display: none;
+}
+
+div.campo > span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: var(--cinza-claro);
+    font-size: 1em;
+    height: 100%;
+    border: none;
+    padding: 5px;
+    border-radius: 8px;
+    width: calc(100% - 46px);
+    transform: translateY(-11px);
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+    border: none;
 }
 
 form > input[type=submit] {
